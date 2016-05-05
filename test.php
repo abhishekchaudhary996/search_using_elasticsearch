@@ -11,6 +11,8 @@ if(isset($_GET['search']))
   $user = 'abhishek';
   $password = 'portea';
 
+  $new_user = "abhishek";
+
   $queryData = array('q' => $term) ; // writing query...................
   $url = 
   'http://'.$search_host.':'.$search_port.'/'.$index.'/'.$doc_type.'/_search?'.http_build_query($queryData);
