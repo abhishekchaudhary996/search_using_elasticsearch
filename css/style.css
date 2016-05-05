@@ -1,0 +1,67 @@
+#search-term
+{
+    margin-top: 20px;
+}
+
+#menu
+{
+    height: 50px;
+}
+
+
+.input-wrapper {
+  position: relative;
+  line-height: 14px;
+  margin: 0 10px;
+  display: inline-block;
+}
+label {
+  color: #bbb;
+  font-size: 11px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  top: 14px;
+  padding: 0 2px;
+  pointer-events: none;
+  background: #fff;
+  -webkit-transition: -webkit-transform 100ms ease;
+  -moz-transition: -moz-transform 100ms ease;
+  -o-transition: -o-transform 100ms ease;
+  -ms-transition: -ms-transform 100ms ease;
+  transition: transform 100ms ease;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+input {
+  font-size: 13px;
+  color: #555;
+  outline: none;
+  border: 1px solid #bbb;
+  padding: 10px 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+input:invalid + label {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+input:focus {
+  border-color: #2b96f1;
+}
+input:focus + label {
+  color: #2b96f1;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
