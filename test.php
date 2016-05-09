@@ -21,7 +21,7 @@ if(isset($_GET['search']))
   curl_setopt($ch, CURLOPT_PORT, 9200);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
   curl_setopt($ch, CURLOPT_CUSTOMREQUEST, strtoupper($method));
-  curl_setopt($ch, CURLOPT_USERPWD, "$user:$password");
+  //curl_setopt($ch, CURLOPT_USERPWD, "$user:$password");
   $result = curl_exec($ch);
   curl_close($ch);
   $ary = json_decode($result,true);
